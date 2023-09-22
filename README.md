@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@esm/index.mjs';
+import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@v0.1.0-esm/index.mjs';
 ```
 
 #### months()
@@ -88,7 +88,7 @@ var list = months();
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@esm/index.mjs';
+import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@v0.1.0-esm/index.mjs';
 
 var list;
 var len;
