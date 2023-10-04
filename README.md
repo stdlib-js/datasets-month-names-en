@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@deno/mod.js';
+import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@v0.1.1-deno/mod.js';
 ```
 
 #### months()
@@ -83,7 +83,7 @@ var list = months();
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@deno/mod.js';
+import months from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-month-names-en@v0.1.1-deno/mod.js';
 
 var list;
 var len;
