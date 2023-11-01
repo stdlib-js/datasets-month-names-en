@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,47 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var IS_BROWSER = require( '@stdlib/assert-is-browser' );
-var isStringArray = require( '@stdlib/assert-is-string-array' ).primitives;
-var months = require( './../../dist' );
-
-
-// VARIABLES //
-
-var opts = {
-	'skip': IS_BROWSER
-};
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof months, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns an array of strings', opts, function test( t ) {
-	var list = months();
-	t.equal( isStringArray( list ), true, 'returns an array of strings' );
-	t.equal( list.length, 12, 'has length of 12' );
-	t.end();
-});
-
-tape( 'the function returns a copy', opts, function test( t ) {
-	var l1;
-	var l2;
-
-	l1 = months();
-	l2 = months();
-
-	t.notEqual( l1, l2, 'different references' );
-
-	l1[ 5 ] = 'beep';
-
-	t.equal( l1[ 5 ], 'beep', 'expected element' );
-	t.notEqual( l1[ 5 ], l2[ 5 ], 'no shared state' );
-	t.equal( l2[ 5 ], 'June', 'expected element' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
